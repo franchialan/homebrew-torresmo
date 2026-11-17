@@ -11,7 +11,7 @@ class Torresmo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/franchialan/torresmo/releases/download/v0.1.0/torresmo_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f0d646bbb4cca48cb96f9de2465439b788453422b9ea2f6c54de29edf9780a5d"
+      sha256 "efb001ddcf8623f31ff6eb98b0ea5c51fa4509cada48fd1549e35c76702c5a05"
 
       define_method(:install) do
         bin.install "torresmo"
@@ -19,7 +19,7 @@ class Torresmo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/franchialan/torresmo/releases/download/v0.1.0/torresmo_0.1.0_darwin_arm64.tar.gz"
-      sha256 "7751a4d9771db225d7382ad891a4dbfdb7cb8c251f103a427cbadacf51fe93a5"
+      sha256 "ba1a8204ab8d3111c3839e1beafb6d4b977d10f8188ca3c347a30a381fc1b9e8"
 
       define_method(:install) do
         bin.install "torresmo"
@@ -30,14 +30,14 @@ class Torresmo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/franchialan/torresmo/releases/download/v0.1.0/torresmo_0.1.0_linux_amd64.tar.gz"
-      sha256 "429b1aa79c1309d2e0882b5fc57f37550ba3d0df46f37acc9f7a0bad5ca6a353"
+      sha256 "1d040431574192dc38db2332986a46495562661e4d79ba5521be2296c88e95ac"
       define_method(:install) do
         bin.install "torresmo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/franchialan/torresmo/releases/download/v0.1.0/torresmo_0.1.0_linux_arm64.tar.gz"
-      sha256 "c9dea2654e39a6bdb8aefdd3da4d1fffce8de9117ab42a748fb8ded244d375ba"
+      sha256 "14761af263807d369567aae8452ef667dbd69fba68075eed1d8da954c8b1cc3a"
       define_method(:install) do
         bin.install "torresmo"
       end
