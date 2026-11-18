@@ -5,21 +5,21 @@
 class Torresmo < Formula
   desc "A container orchestrator for local development"
   homepage "https://github.com/franchialan/torresmo"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/franchialan/torresmo/releases/download/v0.1.0/torresmo_0.1.0_darwin_amd64.tar.gz"
-      sha256 "efb001ddcf8623f31ff6eb98b0ea5c51fa4509cada48fd1549e35c76702c5a05"
+      url "https://github.com/franchialan/torresmo/releases/download/v0.2.0/torresmo_0.2.0_darwin_amd64.tar.gz"
+      sha256 "5555b6c3f897ee12a84fac075bdbad4f24e1fc06e1de10bb2da0ff7d4a3c7909"
 
       define_method(:install) do
         bin.install "torresmo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/franchialan/torresmo/releases/download/v0.1.0/torresmo_0.1.0_darwin_arm64.tar.gz"
-      sha256 "ba1a8204ab8d3111c3839e1beafb6d4b977d10f8188ca3c347a30a381fc1b9e8"
+      url "https://github.com/franchialan/torresmo/releases/download/v0.2.0/torresmo_0.2.0_darwin_arm64.tar.gz"
+      sha256 "b1698b92ec383f6debb9357b9e25d760af9b6c6dba87982a7e03cb49f486f039"
 
       define_method(:install) do
         bin.install "torresmo"
@@ -29,15 +29,15 @@ class Torresmo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/franchialan/torresmo/releases/download/v0.1.0/torresmo_0.1.0_linux_amd64.tar.gz"
-      sha256 "1d040431574192dc38db2332986a46495562661e4d79ba5521be2296c88e95ac"
+      url "https://github.com/franchialan/torresmo/releases/download/v0.2.0/torresmo_0.2.0_linux_amd64.tar.gz"
+      sha256 "984d1b1be4afa9d1f0aa81ede18cce9992c2274704888a20ad02dfdbcbc54c20"
       define_method(:install) do
         bin.install "torresmo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/franchialan/torresmo/releases/download/v0.1.0/torresmo_0.1.0_linux_arm64.tar.gz"
-      sha256 "14761af263807d369567aae8452ef667dbd69fba68075eed1d8da954c8b1cc3a"
+      url "https://github.com/franchialan/torresmo/releases/download/v0.2.0/torresmo_0.2.0_linux_arm64.tar.gz"
+      sha256 "4ccee8d157dbf0ea4b5d9e0580fcfacb52f431b97a7a5ae69d6d925c5b2ccb41"
       define_method(:install) do
         bin.install "torresmo"
       end
